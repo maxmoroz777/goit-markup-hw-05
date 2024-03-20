@@ -3,7 +3,6 @@ body {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
-    /* letter-spacing: 2%; */
     background-color: #FFFFFF;
 }
 
@@ -71,14 +70,11 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-
-
 }
 
 .nav {
     display: flex;
     align-items: center;
-
 }
 
 .nav-list {
@@ -132,7 +128,6 @@ img {
 .address-list {
     display: flex;
     gap: 40px;
-
 }
 
 .contacts {
@@ -569,7 +564,11 @@ img {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    padding-left: 24px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: #404BBF;
 }
 
 .subscribe-icon {
@@ -591,8 +590,13 @@ img {
 
 }
 
-.backdrop .is-open {
+.backdrop {
     display: block;
+}
+
+.is-open {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal {
@@ -641,8 +645,6 @@ img {
     border: none;
     fill: #ffffff;
 }
-
-
 
 .review-form-desc {
     font-weight: 500;
@@ -700,13 +702,6 @@ img {
 .review-form-input:focus+.review-form-icon {
     fill: #4D5AE5;
 }
-
-/* .review-form-input-wraper:focus-within {
-    border: 1px solid #4d5ae5;
-    border-radius: 4px;
-    width: 360px;
-    height: 40px;
-} */
 
 .review-form-masage {
     font-size: 12px;
@@ -819,4 +814,9 @@ img {
     cursor: pointer;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.review-form-submit-button:hover,
+.review-form-submit-button:focus {
+    background-color: #404BBF;
 }
